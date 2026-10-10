@@ -42,8 +42,8 @@ class DifyChatClient {
   private readonly API_KEY: string;
   private readonly API_BASE_URL: string;
   constructor() {
-    const apiKey = process.env.DIFY_API_KEY;
-    const apiBaseUrl = process.env.DIFY_API_BASE_URL;
+    const apiKey = "app-ZS7XxyTyfkOW2o2rWDyexEIS"
+    const apiBaseUrl = "https://api.dify.ai/v1";
 
     if (!apiKey || !apiBaseUrl) {
       throw new Error(
