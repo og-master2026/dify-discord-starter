@@ -423,11 +423,11 @@ class DiscordBot {
   private getUserId(userId: string | undefined, serverId: string | undefined) {
     switch (this.HISTORY_MODE) {
       case "user":
-        return userId || "";
+        return userId || "discord-user";
       case "channel":
-        return serverId || "";
+        return serverId || "discord-user";
       default:
-        return "";
+        return "discord-user";
     }
   }
 
